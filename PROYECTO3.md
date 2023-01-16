@@ -32,7 +32,7 @@ Una vez dentro, se abre una página diferente, la cual da 3 opciones con botones
 </body>
 </html>
 ```
-# Parte2: JavaScript 
+## Parte2: JavaScript 
 ```Javascript
 const express = require('express')
 const app = express()
