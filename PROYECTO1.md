@@ -1,4 +1,4 @@
-#Esta es la primera parte en la que se crea el formulario y el fichero JSON.
+## Esta es la primera parte en la que se crea el formulario y el fichero JSON.
 using assembly System.Windows.Forms
 using namespace System.Windows.Forms
 class usuario
@@ -61,7 +61,7 @@ $form.ShowDialog()
 
 $arrayoperaciones | ConvertTo-Json | Out-File C:\xampp\htdocs\usuarios.txt -Append -Encoding default
 
-#En la segunda parte, se lee el fichero JSON y hace las operaciones introducidas en el formulario.
+## En la segunda parte, se lee el fichero JSON y hace las operaciones introducidas en el formulario.
 $invocar = Invoke-RestMethod "http://localhost/usuarios.txt" 
 foreach($linea in $invocar)
 {
