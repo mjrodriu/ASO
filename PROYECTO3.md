@@ -33,7 +33,7 @@ Una vez dentro, se abre una página diferente, la cual da 3 opciones con botones
 </html>
 ```
 # Parte2: JavaScript 
-
+```Javascript
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
@@ -83,7 +83,7 @@ app.post('/mostrarcosas', (req, res) => {
 var server = app.listen(8888, () => {
   console.log('Servidor web iniciado')
 })
-
+```
 ##################################################################################################################################################################
 Las páginas con los estilos contienen:
 # ESTILOS1
