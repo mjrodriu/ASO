@@ -85,7 +85,7 @@ var server = app.listen(8888, () => {
 })
 ```
 ------------------------
-# Las páginas con los estilos contienen:
+# Los documentos de los estilos contienen:
 ## ESTILOS1
 ```css
 * {
@@ -188,8 +188,9 @@ main {
     letter-spacing: 2px;
 }
 ```
-```css
+
 ## ESTILOS2
+```css
 body { background-color:#E5E4E2;
        font-family:Monospace;
        font-size:10pt; }
