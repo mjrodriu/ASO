@@ -1,8 +1,9 @@
-2º Proyecto 
+# 2º Proyecto 
 Consiste en insertar los hashes y nombres de un los .exe de un equipo del dominio en una base de datos del Server,
 para luego comparar alguno de estos "al instante" y comprobar su integridad.
 
-#Conectarse a la BBDD
+## Conectarse a la BBDD
+```PowerShell
 [void][System.Reflection.Assembly]::LoadWithPartialName("MySql.Data")
 $Connection = New-Object MySql.Data.MySqlClient.MySqlConnection
 $ConnectionString = "server=" + "localhost" + ";port=3306;uid=" + "root" + ";pwd=" + ";database="+"directorioactivo"
@@ -33,8 +34,9 @@ foreach($item in $remotos)
     $DataSet.Tables[0] 
 }
 
-
-#Select de la bbdd para comparar con los resultados del equipo remoto
+```
+# Select de la bbdd para comparar con los resultados del equipo remoto
+```PowerShell
 $equiposdered = Get-ADComputer -Filter * | where Name -NotMatch WIN-0D0T0Q94LB4 | select -ExpandProperty Name 
 $resultado = Invoke-Command -ComputerName $equiposdered -ScriptBlock {(Get-FileHash -path c:\windows\system32\sihost.exe).hash}
 
@@ -51,7 +53,7 @@ if($DataSet.Tables[0].hash -eq $resultado)
  "es distinto"
 }
 
-
+```
 
 
 
