@@ -1,10 +1,9 @@
-Proyecto de Conexión Remota con PowerShell y NodeJS
+## Proyecto de Conexión Remota con PowerShell y NodeJS
 Consiste en crear un Login, en el que solo podrá "iniciar sesión" el Administrador con su respectiva contraseña. 
 Una vez dentro, se abre una página diferente, la cual da 3 opciones con botones, con los cuales el administrador podrá obtener información, al instante, sobre:
 <PROCESOS>, <SERVICIOS> O <LA RED>. 
 
-#Parte1: HTML 
-
+# Parte1: HTML 
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +32,7 @@ Una vez dentro, se abre una página diferente, la cual da 3 opciones con botones
 </body>
 </html>
 
-#Parte2: JavaScript 
+# Parte2: JavaScript 
 
 const express = require('express')
 const app = express()
@@ -87,7 +86,7 @@ var server = app.listen(8888, () => {
 
 ##################################################################################################################################################################
 Las páginas con los estilos contienen:
-#ESTILOS1
+# ESTILOS1
 * {
     padding: 0px;
     margin: 0px;
@@ -188,7 +187,7 @@ main {
     letter-spacing: 2px;
 }
 
-#ESTILOS2
+# ESTILOS2
 body { background-color:#E5E4E2;
        font-family:Monospace;
        font-size:10pt; }
