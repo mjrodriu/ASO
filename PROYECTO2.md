@@ -4,6 +4,7 @@ para luego comparar alguno de estos "al instante" y comprobar su integridad.
 
 ## Conectarse a la BBDD
 ```PowerShell
+#Conectarse a la BBDD
 [void][System.Reflection.Assembly]::LoadWithPartialName("MySql.Data")
 $Connection = New-Object MySql.Data.MySqlClient.MySqlConnection
 $ConnectionString = "server=" + "localhost" + ";port=3306;uid=" + "root" + ";pwd=" + ";database="+"directorioactivo"
