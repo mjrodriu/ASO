@@ -2,7 +2,7 @@
 Consiste en insertar los hashes y nombres de un los .exe de un equipo del dominio en una base de datos del Server,
 para luego comparar alguno de estos "al instante" y comprobar su integridad.
 
-## Conectarse a la BBDD
+## 1. Conectarse a la BBDD y recopilar datos
 ```PowerShell
 #Conectarse a la BBDD
 [void][System.Reflection.Assembly]::LoadWithPartialName("MySql.Data")
@@ -36,7 +36,7 @@ foreach($item in $remotos)
 }
 
 ```
-# Select de la bbdd para comparar con los resultados del equipo remoto
+# 2. Select a la BBDD para comparar con los resultados del equipo remoto
 ```PowerShell
 $equiposdered = Get-ADComputer -Filter * | where Name -NotMatch WIN-0D0T0Q94LB4 | select -ExpandProperty Name 
 $resultado = Invoke-Command -ComputerName $equiposdered -ScriptBlock {(Get-FileHash -path c:\windows\system32\sihost.exe).hash}
