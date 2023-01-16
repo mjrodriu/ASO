@@ -84,9 +84,10 @@ var server = app.listen(8888, () => {
   console.log('Servidor web iniciado')
 })
 ```
-##################################################################################################################################################################
-Las páginas con los estilos contienen:
-# ESTILOS1
+------------------------
+# Las páginas con los estilos contienen:
+## ESTILOS1
+```css
 * {
     padding: 0px;
     margin: 0px;
@@ -186,8 +187,9 @@ main {
     font-size: 0.9rem;
     letter-spacing: 2px;
 }
-
-# ESTILOS2
+```
+```css
+## ESTILOS2
 body { background-color:#E5E4E2;
        font-family:Monospace;
        font-size:10pt; }
@@ -207,6 +209,7 @@ h2 {
   margin-left:25px;
   font-family:Tahoma;
   font-size:8pt;
-}
+  }
+  ```
 
 
