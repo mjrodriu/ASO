@@ -1,4 +1,4 @@
-# PRIMER PROYECTO ASO 2022/2023
+# 1º PROYECTO ASO 2022/2023
 ### Consiste en crear un formulario que permita introducir un nombre asociado a una operación (crear usuario, grupo, OU, etc.). Cada vez que se introduce un usuario se añade a un fichero JSON que se sube a un servidor web. Por otro lado, desarrollar un script que lea ese fichero JSON desde una URL y realice las operaciones indicadas.
 
 ## Esta es la primera parte en la que se crea el formulario y el fichero JSON.
