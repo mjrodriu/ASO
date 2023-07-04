@@ -1,4 +1,4 @@
-# 2º Proyecto 
+# 2º PROYECTO - PRUEBAS DE INTEGRIDAD (Insertar hash de un cliente en la BBDD del servidor y comprar resultados) 
 Consiste en insertar los hashes y nombres de un los .exe de un equipo del dominio en una base de datos del Server,
 para luego comparar alguno de estos "al instante" y comprobar su integridad.
 
