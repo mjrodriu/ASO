@@ -1,9 +1,11 @@
 # SCRIPTS DE POWERSHELL VARIADOS Y ÚTILES
 -------------------------------------------------
 -------------------------------------------------
-
-# Lista de documentos que quieres combinar
+-------------------------------------------------
+## En el siguiente script vamos a conseguir unir el contenido de varios documentos de word en 1 sólo
+-------------------------------------------------
 ```Powershell
+# Lista de documentos que quieres combinar
 $documentPaths = @(
     'C:\ruta\documento1.docx',
     'C:\ruta\documento2.docx'
