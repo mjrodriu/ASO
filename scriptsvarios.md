@@ -1,4 +1,9 @@
+# SCRIPTS DE POWERSHELL VARIADOS Y ÚTILES
+-------------------------------------------------
+-------------------------------------------------
+
 # Lista de documentos que quieres combinar
+```Powershell
 $documentPaths = @(
     'C:\ruta\documento1.docx',
     'C:\ruta\documento2.docx'
@@ -38,3 +43,5 @@ $null = [System.Runtime.Interopservices.Marshal]::ReleaseComObject($mergedDocume
 $null = [System.Runtime.Interopservices.Marshal]::ReleaseComObject($word)
 [System.GC]::Collect()
 [System.GC]::WaitForPendingFinalizers()
+
+```
