@@ -1,5 +1,5 @@
 # SCRIPTS DE POWERSHELL VARIADOS Y ÚTILES
--------------------------------------------------
+
 ## En el siguiente script buscamos conseguir unir el contenido de varios documentos de word en 1 sólo
 -------------------------------------------------
 ```Powershell
